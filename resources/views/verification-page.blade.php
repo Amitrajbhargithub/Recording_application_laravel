@@ -28,9 +28,6 @@
   <!-- responsive style -->
   <link href="{{asset('css/responsive.css')}}" rel="stylesheet" />
   <style>
-    #login-image {
-        height: 425px;
-    }
     @media(max-width:360px){
         #login-image {
             height: 186px!important;
@@ -94,7 +91,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 ">
-                    
+
                 </div>
             </div>
         </div>
@@ -183,7 +180,7 @@
                     <!-- Linkedin -->
                    </div>
             </p>
-            
+
 
           </div>
         </div>

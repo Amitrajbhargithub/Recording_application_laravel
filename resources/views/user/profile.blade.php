@@ -145,12 +145,6 @@
                 @enderror
             </div>
             <div>
-                <input type="password" placeholder="Password" autocomplete="off" name="password"/>
-                @error('password')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-            </div>
-            <div>
                 <input type="file" placeholder="upload image" name="image"/>
                 @error('image')
                     <div class="error">{{ $message }}</div>
@@ -167,7 +161,7 @@
                 Save
               </button>
             </div>
-            
+
           </form>
         </div>
         <div class="col-md-6">
@@ -205,7 +199,7 @@
               @csrf
               <input type="hidden" name="route" value="{{'/user/profile'}}">
               <input type="text" placeholder="Enter Your email" name="news_email">
-              
+
               <button>
                 subscribe
               </button>
@@ -297,9 +291,7 @@
   <script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script>
 
   <script type="text/javascript">
-    $(document).ready(function(){
-      $('.dropdown-toggle').dropdown()
-    });
+
 </script>
 </body>
 

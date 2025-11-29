@@ -29,7 +29,6 @@ class UserDashboard extends Controller
         $validate = [
             'name' => 'required',
             'phone' => 'required|digits:10|numeric',
-            'password' => 'required|min:6|max:10',
             'image' => 'required'
         ];
         $validator = Validator::make($request->all(),$validate);

@@ -573,3 +573,61 @@ a:focus {
   color: #fefdfc;
 }
 /*# sourceMappingURL=style.css.map */
+#register-image {
+    height: 425px;
+}
+@media(max-width:360px) {
+    #register-image {
+        height: 330px !important;
+    }
+}
+@media(max-width:512px) {
+    #register-image {
+        height: 380px;
+    }
+}
+@media(max-width:375px) {
+    #register-image {
+        height: 345px;
+    }
+}
+.error {
+    color: #ff5555;
+}
+
+.slider_section .detail-box span {
+    font-size: 30px;
+}
+@media (max-width: 420px) {
+    .slider_section .detail-box span {
+        font-size: 20px;
+    }
+}
+#elementEl::after {
+    content: '|';
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+.profile-image {
+    border-radius: 50%;
+    height: 49px;
+    width: 49px;
+}
+.dashboard-btn{
+    color: white;
+    font-size: 22px;
+}
+audio {
+    width: 100%;
+    max-width: 300px;
+}

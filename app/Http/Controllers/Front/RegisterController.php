@@ -5,13 +5,14 @@ namespace App\Http\Controllers\front;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
-use Validator;
-use Redirect;
-use Hash;
-use Auth;
-use Str;
 use App\Mail\RegisterAccount;
 use App\Mail\MailConfirmation;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
+
 class RegisterController extends Controller
 {
     public function register() {
@@ -48,7 +49,7 @@ class RegisterController extends Controller
         $update = User::find($user_id);
         $update->is_email_verified = '1';
         $update->save();
-        \Mail::to($update->email)->send(new MailConfirmation($update));
+        Mail::to($update->email)->send(new MailConfirmation($update));
         return view('verification-page');
     }
 }
